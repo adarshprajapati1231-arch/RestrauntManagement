@@ -16,24 +16,25 @@
 
 export const business = {
   /* ── Identity ───────────────────────────────────────────── */
-  name: "Adarsh Fine Dine",
-  tagline: "Luxury Multi Cuisine Restaurant",
+  name: "The Ayodhya Mahal",
+  tagline: "Premium Family Restaurant & Fine Dine",
   description:
-    "An extraordinary culinary journey through the finest Indian and International cuisines, served in an atmosphere of understated elegance in the heart of Ayodhya.",
+    "A premium multi-cuisine family restaurant in Ayodhya offering elegant dining, authentic Indian flavours, and a comfortable atmosphere for families, celebrations, and guests.",
 
   /* ── Contact ────────────────────────────────────────────── */
-  whatsapp: "919936329494",       // Country code + number, no +
-  phone: "+91 99363 29494",
-  email: "info@mayursfinedine.com",
-  address: "Ram Path, Ayodhya, Uttar Pradesh — 224001",
-  maps: "https://maps.google.com/?q=Ayodhya,Uttar+Pradesh",
+  whatsapp: "9214505594",       // Country code + number, no +
+  phone: "+91 9214505594",
+  email: "info@TheAyodhyaMahal.com",
+  address: "Awas Vikas Yojana, AB 01, Ram Path Rd, opposite Jal Sansthan, Awadhpuri Colony, Avas Vikas Colony, Amanigunj, Ayodhya, Faizabad, Uttar Pradesh 224001",
+  maps: "https://www.google.com/maps/place/The+Ayodhya+Mahal/@26.7820364,82.1684384,1173m/data=!3m1!1e3!4m15!1m8!3m7!1s0x399a07fd9ae2e829:0x23fa3f75b12d653f!2sThe+Ayodhya+Mahal!8m2!3d26.7822116!4d82.168528!10e9!16s%2Fg%2F11mckn7q7r!3m5!1s0x399a07fd9ae2e829:0x23fa3f75b12d653f!8m2!3d26.7822116!4d82.168528!16s%2Fg%2F11mckn7q7r?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D",
 
   /* ── Branding ───────────────────────────────────────────── */
   // Replace with the client's hosted logo URL
   logo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=120&h=120&fit=crop&auto=format",
   // Full-width hero background (1920x1080 recommended)
   heroImage:
-    "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1920&h=1080&fit=crop&auto=format",
+    // "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1920&h=1080&fit=crop&auto=format",
+    "https://content.jdmagicbox.com/v2/comp/ayodhya/y4/9999p5278.5278.250422034207.v1y4/catalogue/the-ayodhya-mahal-awadhpuri-colony-ayodhya-restaurants-6vog250wlm.jpg?imwidth=463.3333333333333",
 
   /* ── Operations ─────────────────────────────────────────── */
   openingHours: "10 AM – 11 PM",
@@ -41,8 +42,8 @@ export const business = {
 
   /* ── Social ─────────────────────────────────────────────── */
   social: {
-    instagram: "https://instagram.com/mayursfinedine",
-    facebook: "https://facebook.com/mayursfinedine",
+    instagram: "",
+    facebook: "",
   },
 
   /* ── Theme Colors (auto-applies to entire site) ─────────── */
@@ -56,13 +57,13 @@ export const business = {
   features: {
     rooms: true,
     banquet: false,
-    delivery: false,
+    delivery: true,
     reservation: true,
   },
 
   /* ── Stats (shown on hero info card) ───────────────────── */
   stats: {
-    rating: "4.9",
+    rating: "4.8",
     dishes: "120+",
     years: "6+",
   },

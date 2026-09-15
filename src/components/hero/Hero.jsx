@@ -36,7 +36,7 @@ export default function Hero({ business }) {
         <img
           src={business.heroImage}
           alt={`${business.name} hero`}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover  object-center"
           loading="eager"
         />
         {/* Multi-layer gradient overlay for depth */}
@@ -61,7 +61,7 @@ export default function Hero({ business }) {
         <div className="max-w-4xl mx-auto text-center">
           {/* Label */}
           <motion.p
-            className="text-xs font-semibold tracking-widest uppercase mb-5"
+            className="text-[8px] md:text-xs font-semibold tracking-widest uppercase mb-5"
             style={{ color: "var(--color-gold)" }}
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -148,7 +148,8 @@ export default function Hero({ business }) {
             <InfoStat
               icon={<CalendarDays size={18} />}
               value="Events"
-              label="Banquet & Dining"
+              // label="Banquet & Dining"
+              label="Accepts Reservations"
             />
             {/* Hours */}
             <InfoStat
