@@ -1,0 +1,637 @@
+ROLE
+
+You are a Senior Product Designer + React Frontend Engineer.
+
+Build a production-quality, reusable restaurant website template for my web development business.
+
+This is NOT a single-client website. It must be a template engine where I only change one JSON file (businessData.js) to create a completely new restaurant website for another client.
+
+The project must be built using:
+
+React 19
+
+Vite
+
+Tailwind CSS
+
+Lucide React
+
+Recharts
+
+Framer Motion
+
+Google Fonts
+
+Local JSON data
+
+LocalStorage
+
+No backend
+
+Fully responsive
+
+Mobile-first
+
+Everything must work offline except images loaded from URLs.
+
+OBJECTIVE
+
+I sell websites worth ₹15,000–30,000 to restaurants, cafés, hotels and banquet halls.
+
+The same codebase should be reusable for unlimited clients by changing only one JSON object.
+
+Never hardcode restaurant information inside components.
+
+DESIGN STYLE
+
+Create a luxury modern experience inspired by:
+
+Apple
+
+Linear
+
+Premium boutique hotels
+
+Fine dining restaurants
+
+Avoid template appearance.
+
+Theme
+
+Dark luxury
+
+Earthy green
+
+Brown brick
+
+Glassmorphism
+
+Soft gold accents
+
+Colors
+primary: "#263B33"
+secondary: "#8A5A3C"
+background: "#0E1412"
+surface: "rgba(255,255,255,0.08)"
+gold: "#C9A45C"
+text: "#F6F4F1"
+Typography
+
+Use Google Fonts
+
+Heading:
+
+Cormorant Garamond
+
+Body:
+
+Inter
+
+Use perfect spacing and typography hierarchy.
+
+PROJECT STRUCTURE
+
+Create exactly this structure.
+
+src/
+
+ ├── assets/
+
+ ├── components/
+ │    ├── layout/
+ │    ├── hero/
+ │    ├── menu/
+ │    ├── gallery/
+ │    ├── rooms/
+ │    ├── banquet/
+ │    ├── booking/
+ │    ├── cart/
+ │    ├── testimonials/
+ │    ├── contact/
+ │    └── ui/
+
+ ├── data/
+ │    └── businessData.js
+
+ ├── hooks/
+ │    └── useCart.js
+
+ ├── utils/
+ │    ├── whatsapp.js
+ │    └── calculateGST.js
+
+ ├── App.jsx
+
+ └── main.jsx
+MOST IMPORTANT FILE
+
+Create one file:
+
+businessData.js
+
+Every client information must come from here.
+
+Structure:
+
+export const business = {
+
+  name:"Mayur's Fine Dine",
+
+  tagline:"Luxury Multi Cuisine Restaurant",
+
+  whatsapp:"919936329494",
+
+  phone:"+91 99363 29494",
+
+  email:"",
+
+  address:"Ram Path, Ayodhya",
+
+  maps:"https://maps.google....",
+
+  heroImage:"https://....jpg",
+
+  logo:"https://....png",
+
+  openingHours:"10 AM - 11 PM",
+
+  social:{
+    instagram:"",
+    facebook:""
+  },
+
+  colors:{
+    primary:"#263B33",
+    secondary:"#8A5A3C"
+  },
+
+  features:{
+    rooms:true,
+    banquet:true,
+    delivery:true,
+    reservation:true
+  },
+
+  gallery:[
+    "url1",
+    "url2",
+    "url3"
+  ],
+
+  rooms:[
+    {
+      name:"Deluxe Room",
+      image:"",
+      price:2499,
+      guests:2,
+      size:"240 sqft",
+      wifi:true,
+      ac:true,
+      breakfast:true
+    }
+  ],
+
+  banquet:[
+    {
+      title:"Wedding Hall",
+      image:"",
+      capacity:250,
+      parking:true
+    }
+  ],
+
+  menu:[
+    {
+      id:1,
+      category:"Starters",
+      name:"Paneer Tikka",
+      desc:"Smoked cottage cheese",
+      image:"",
+      veg:true,
+      price:320
+    }
+  ]
+}
+
+Changing only this object should completely rebrand the website.
+
+NAVBAR
+
+Sticky
+
+Glass effect
+
+Blur on scroll
+
+Links
+
+Home
+
+Menu
+
+Rooms
+
+Banquet
+
+Gallery
+
+Book
+
+Contact
+
+Mobile drawer.
+
+Animated underline.
+
+HERO
+
+Use image from
+
+business.heroImage
+
+Full viewport.
+
+Overlay.
+
+Content from JSON.
+
+Floating glass info card containing:
+
+Rating
+
+120+ Dishes
+
+Banquet
+
+Open Hours
+
+Buttons
+
+Explore Menu
+
+Reserve Table
+
+Framer Motion animations.
+
+MENU
+
+Dynamic from JSON.
+
+Categories generated automatically.
+
+Example:
+
+Starters
+
+North Indian
+
+Chinese
+
+Pizza
+
+Dessert
+
+Beverages
+
+Each card contains:
+
+Image
+
+Veg badge
+
+Name
+
+Description
+
+Price
+
+Quantity selector
+
+Add to cart
+
+Luxury hover.
+
+No generic buttons.
+
+CART SYSTEM
+
+Create custom hook:
+
+useCart()
+
+Features:
+
+Add
+
+Remove
+
+Increase
+
+Decrease
+
+Quantity
+
+Subtotal
+
+GST
+
+Grand Total
+
+Persist in LocalStorage
+
+Desktop:
+
+Floating sidebar.
+
+Mobile:
+
+Bottom sheet.
+
+BOOKING SYSTEM
+
+Create premium segmented control.
+
+Three modes.
+
+TABLE
+
+User selects
+
+Table 1–30
+
+Inputs
+
+Name
+
+Phone
+
+Special Request
+
+ROOM
+
+Dropdown
+
+101–120
+
+Inputs
+
+Name
+
+Phone
+
+Request
+
+DELIVERY
+
+Inputs
+
+Name
+
+Phone
+
+Full Address
+
+Landmark
+
+Pincode
+
+WHATSAPP ORDER
+
+Restaurant number comes from JSON.
+
+Generate beautiful formatted message.
+
+Use WhatsApp markdown.
+
+Example:
+
+━━━━━━━━━━━━━━━━━━━━
+MAYUR'S FINE DINE
+━━━━━━━━━━━━━━━━━━━━
+
+ORDER SUMMARY
+
+Customer
+Rahul Singh
+
+Phone
+9876543210
+
+Order Type
+Table Dining
+
+Table No.
+04
+
+────────────────────
+
+ITEMS
+
+2 × Paneer Tikka        ₹640
+1 × Garlic Naan         ₹60
+
+────────────────────
+
+Subtotal               ₹700
+GST (5%)               ₹35
+
+GRAND TOTAL          ₹735
+
+────────────────────
+
+Special Request
+
+Less spicy
+
+Must automatically open WhatsApp.
+
+ROOMS
+
+Render only if
+
+business.features.rooms
+
+Luxury cards.
+
+Image
+
+Price
+
+Amenities
+
+Book button.
+
+BANQUET
+
+Render only if enabled.
+
+Capacity
+
+Decoration
+
+Parking
+
+Dining
+
+Gallery
+
+Enquiry button.
+
+GALLERY
+
+Masonry layout.
+
+Images from JSON.
+
+Lazy loading.
+
+Hover zoom.
+
+TESTIMONIALS
+
+Create reusable JSON.
+
+Auto slider.
+
+Framer Motion.
+
+CONTACT
+
+Use JSON.
+
+Address
+
+Phone
+
+Email
+
+Map button
+
+Social links.
+
+FOOTER
+
+Dynamic.
+
+Current year.
+
+Business name.
+
+LOCALSTORAGE
+
+Persist:
+
+restaurant_cart
+
+theme
+
+last_booking
+
+Cart survives refresh.
+
+RESPONSIVE
+
+Must look perfect on:
+
+320px
+
+375px
+
+768px
+
+1024px
+
+1440px
+
+No overflow.
+
+PERFORMANCE
+
+Use:
+
+Lazy images
+
+React.memo where useful
+
+Dynamic rendering
+
+Clean component separation
+
+EXTRA FEATURES
+
+Implement these yourself.
+
+Loading Screen
+
+Restaurant logo
+
+Fade animation
+
+Scroll Progress Bar
+
+Top indicator.
+
+Floating Buttons
+
+Call
+
+WhatsApp
+
+Back To Top
+
+Smooth.
+
+Search Menu
+
+Instant filtering.
+
+Theme Personalization
+
+Colors should automatically come from JSON.
+
+If primary color changes,
+
+entire UI updates.
+
+Empty Cart
+
+Luxury illustration.
+
+GST Utility
+
+Reusable util.
+
+QR Menu Ready
+
+Generate QR page using same menu.
+
+INSTALL DEPENDENCIES
+
+Use:
+
+npm install lucide-react recharts framer-motion
+CODING RULES
+
+Never hardcode business data.
+
+Every text comes from JSON where appropriate.
+
+Components must be reusable.
+
+Clean naming.
+
+No emojis.
+
+Premium UI only.
+
+Use Lucide icons exclusively.
+
+Fully commented code.
+
+Production-ready quality.
+
+FINAL OUTPUT
+
+Generate the entire React Vite project, not snippets.
+
+The website should be convincing enough that a restaurant owner believes it is worth ₹30,000 and I should be able to create a new client website by editing only src/data/businessData.js.
