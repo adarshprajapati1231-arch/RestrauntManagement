@@ -16,7 +16,7 @@
 
 export const business = {
   /* ── Identity ───────────────────────────────────────────── */
-  name: "Mayur's Fine Dine",
+  name: "Adarsh Fine Dine",
   tagline: "Luxury Multi Cuisine Restaurant",
   description:
     "An extraordinary culinary journey through the finest Indian and International cuisines, served in an atmosphere of understated elegance in the heart of Ayodhya.",
